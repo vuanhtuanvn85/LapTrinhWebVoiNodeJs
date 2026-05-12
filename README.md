@@ -13,6 +13,43 @@ Nếu chưa cài, tải tại: https://nodejs.org
 
 ---
 
+## Mục Lục
+
+- **[Chương 1: Giới Thiệu Node.js](#chương-1-giới-thiệu-nodejs)**
+  - [Bài 1.4: Tạo HTTP Server Cơ Bản](#bài-14-tạo-http-server-cơ-bản)
+- **[Chương 2: Các Module Built-in Của Node.js](#chương-2-các-module-built-in-của-nodejs)**
+  - [Bài 2.2-os: Module OS - Thông Tin Hệ Điều Hành](#bài-22-os-module-os---thông-tin-hệ-điều-hành)
+  - [Bài 2.2-path: Module Path - Xử Lý Đường Dẫn](#bài-22-path-module-path---xử-lý-đường-dẫn)
+  - [Bài 2.2-fs: Module File System - Đọc/Ghi File](#bài-22-fs-module-file-system---đọcghi-file)
+  - [Bài 2.th-01: Thực Hành Tổng Hợp - Đọc JSON & Ghi Báo Cáo](#bài-2th-01-thực-hành-tổng-hợp---đọc-json--ghi-báo-cáo)
+- **[Chương 3: Express.js Cơ Bản](#chương-3-expressjs-cơ-bản)**
+  - [Bài 3.1: Node Modules & NPM](#bài-31-node-modules--npm)
+  - [Bài 3.3: Express, Morgan & Các Loại Tham Số Request](#bài-33-express-morgan--các-loại-tham-số-request)
+  - [Bài 3.th: Thực Hành - Xây Dựng RESTful API CRUD Sinh Viên](#bài-3th-thực-hành---xây-dựng-restful-api-crud-sinh-viên)
+- **[Chương 4: Kiến Trúc MVC](#chương-4-kiến-trúc-mvc)**
+  - [Bài 4.0: So Sánh HTTP Thuần vs Express](#bài-40-so-sánh-http-thuần-vs-express)
+  - [Bài 4.4-mvc: Giới Thiệu Kiến Trúc MVC](#bài-44-mvc-giới-thiệu-kiến-trúc-mvc)
+  - [Bài 4.4.thuchanh: Thực Hành - API Users Đơn Giản (Chưa MVC)](#bài-44thuchanh-thực-hành---api-users-đơn-giản-chưa-mvc)
+  - [Bài 4.4.thuchanh-2: Thực Hành - CRUD Đầy Đủ Với MVC (Nhiều Resource)](#bài-44thuchanh-2-thực-hành---crud-đầy-đủ-với-mvc-nhiều-resource)
+- **[Chương 5: Template Engine - EJS](#chương-5-template-engine---ejs)**
+  - [Bài 5.2: Ứng Dụng Web Với EJS](#bài-52-ứng-dụng-web-với-ejs)
+- **[Chương 6: Middleware](#chương-6-middleware)**
+  - [Bài 6.2-code-log: Middleware Ghi Log Request](#bài-62-code-log-middleware-ghi-log-request)
+  - [Bài 6.2-code-role-admin: Middleware Kiểm Tra Quyền (Authorization)](#bài-62-code-role-admin-middleware-kiểm-tra-quyền-authorization)
+- **[Chương 7: MongoDB & Mongoose](#chương-7-mongodb--mongoose)**
+  - [Bài 7.3: Giới Thiệu Mongoose - Kết Nối MongoDB](#bài-73-giới-thiệu-mongoose---kết-nối-mongodb)
+  - [Bài 7.4: Thực Hành - CRUD Product Với Mongoose (MVC)](#bài-74-thực-hành---crud-product-với-mongoose-mvc)
+- **[Chương 9: MongoDB Nâng Cao](#chương-9-mongodb-nâng-cao)**
+  - [Bài 9.4: Query Operators - Toán Tử Truy Vấn MongoDB](#bài-94-query-operators---toán-tử-truy-vấn-mongodb)
+  - [Bài 9.th: Thực Hành - Explain Query, Index & Phân Trang](#bài-9th-thực-hành---explain-query-index--phân-trang)
+- **[Chương 10: Xác Thực & Phiên Làm Việc](#chương-10-xác-thực--phiên-làm-việc)**
+  - [Bài 10.2: Mã Hóa Mật Khẩu Với Bcrypt](#bài-102-mã-hóa-mật-khẩu-với-bcrypt)
+  - [Bài 10.3: Session & Middleware Xác Thực](#bài-103-session--middleware-xác-thực)
+
+---
+
+<div style="page-break-before: always;"></div>
+
 # Chương 1: Giới Thiệu Node.js
 
 ## Bài 1.4: Tạo HTTP Server Cơ Bản
@@ -156,6 +193,8 @@ Server is running ...
 | `ReferenceError: require is not defined in ES module scope` | Dùng `require()` trong file ES Module | Đổi `require()` thành `import` |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Chương 2: Các Module Built-in Của Node.js
 
@@ -711,6 +750,8 @@ Có tất cả 9 sinh viên
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Chương 3: Express.js Cơ Bản
 
 ## Bài 3.1: Node Modules & NPM
@@ -1067,6 +1108,8 @@ DELETE /sinhvien/1 200 0.234 ms - 20
 | `req.params.id` luôn là string | Route params luôn trả về string | Dùng `Number(req.params.id)` hoặc `parseInt(req.params.id)` nếu cần so sánh số |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Chương 4: Kiến Trúc MVC
 
@@ -1711,6 +1754,8 @@ Kết quả khi product không tồn tại (status 404):
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Chương 5: Template Engine - EJS
 
 ## Bài 5.2: Ứng Dụng Web Với EJS
@@ -1980,6 +2025,8 @@ Click vào tên user (vd: "tuan"), trình duyệt chuyển đến: `http://local
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Chương 6: Middleware
 
 ## Bài 6.2-code-log: Middleware Ghi Log Request
@@ -2161,6 +2208,8 @@ Kết quả: `Welcome!`
 | `Cannot set headers after they are sent` | Vừa gọi `next()` vừa gửi response | Dùng `return next()` hoặc `return res.status(401)...` để dừng hàm ngay |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Chương 7: MongoDB & Mongoose
 
@@ -2659,6 +2708,8 @@ curl -X DELETE http://localhost:3000/api/products/<id>
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Chương 9: MongoDB Nâng Cao
 
 ## Bài 9.4: Query Operators - Toán Tử Truy Vấn MongoDB
@@ -3089,6 +3140,8 @@ curl "http://localhost:3000/api/products/paginate?page=1&limit=5&name=Product%20
 | `explain` trả về lỗi | Structure của explain result thay đổi theo phiên bản MongoDB | Kiểm tra phiên bản MongoDB Atlas đang dùng |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Chương 10: Xác Thực & Phiên Làm Việc
 
